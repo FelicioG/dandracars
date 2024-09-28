@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around; /* eito x*/
+    align-items: center;
+}
+
+header nav {
+    color: black;
+    margin-right: 20px;
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+
+header nav a {
+    color: black;
+    margin-right: 20px;
+    padding: 5px 0;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+
+header nav a:hover {
+    background-color: #f2f2f2; 
+    color:rgb(36, 33, 33 );   
+}
+
+body {
+    background-color: white;
+}
+
+body main {
+    margin-top: 6rem; 
+    
+}
+
+/*style the tab*/
+
+main div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 15%;
+    height: 600px;
+    position:fixed ;
+    
+}
+
+/*style the buttons that are used to open the tab content*/
+.tab button {
+    display: block;
+    background-color: inherit;
+    color:black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*create background color of buttons on hover*/
+.tab button:hover {
+
+    background-color: #ddd;
+}
+
+/*create an active/current "tab button" class*/
+.tab button {
+    background-color: white;
+}
+
+/*style the tab content*/
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 85%;
+    /*border-left:;*/
+    height: 2000px ;
+    margin: 0 0 5% 0 ;
+}
+
+.tabcontent p {
+    margin: 5px 0 5px 0;
+}
+.tabcontent h5 {
+    margin: 15px 0 5px 0; 
+}
+
+#Paris, #Tokyo {
+    display: none;
+}
+
+main div  div a p  {
+    margin: 5px;
+} 
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+th {
+    border: 1px solid black;
+    padding: 0.3rem;
+    background-color: #868686;
+}
+td {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+
+.newbox {
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto 3rem auto ;
+}
+
+.othernew {
+    width: 60%;
+    margin: 0 auto 3rem auto ;
+   
+}
+
+main .newbox img { 
+    height: 400px;
+    width: 500px;
+    margin: 10px 0 0 0;
+}
+
+figure {
+    margin-bottom: 10px;
+    font-size: 70%;
+}
+
+ .conteudo h4,p {
+    
+    text-align: justify;
+    color:rgb(36, 33, 33 );
+    margin-bottom: 10px;
+}
+
+.texto {
+    margin: 0 0 0 0;
+    text-align: justify;
+    font-size: 1.2rem;
+    color:rgb(36, 33, 33 );
+
+}
+
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease 0s;
+    /*background-color: #868686;*/
+}
+
+
+
+ /*FOOTER*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 33, 33 );
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    z-index: 1000;
+    position: relative;
+}
+footer div div a {
+    margin-left: 10px;
+ }
+footer div div  {
+   text-align: center;
+   margin-top: 6px ;
+   color:#f2f2f2;
+}
+
+.networks div a {
+    color: #f2f2f2;
+}
+
+
+/*slide */
+
+.title { 
+    text-align: center;
+    margin: 90px 0 10px;
+    font-size: 30pt;
+    text-transform: uppercase;
+    display: none;
+}
+.slideshow .slide img {
+    height: 250px;
+    width: 300px;
+} 
+.slideshow {
+    position: relative;
+    width: 40%;
+    margin: auto;  
+}
+
+.text {
+    background: rgb(36, 33, 33 );
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    align-content: center;
+    color: #f2f2f2;
+    padding: 8px 12px;
+}
+
+/*Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;  
+}
+
+@keyframes fade {
+    from {opacity: .4; }
+    to {opacity: 1} 
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 800px ) {  
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        height: 76px;
+       
+        display: block;
+       
+        /*justify-content: space-around;  eito x
+        align-items: center; */
+        
+    }
+
+    header nav {
+        margin: 0;
+        padding: 15px;
+        height: 10px;
+        width: 100%;
+        display: visible;
+        display: flex;
+        text-align: center;
+        overflow: auto;
+        align-items: center;
+        white-space: nowrap;
+        
+    }
+
+    header nav a {
+        margin-left: 0px;
+        margin-right: 15px;
+        display: inline-block;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+     }
+
+     .menuu {
+        background-color: white;
+       /* height: 10px;*/
+    }
+
+    header .logo  {
+        /*margin-left: 200px;*/
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+    }
+
+    header .logo img {
+        /*margin-left: 200px;*/
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+      /*MAIN*/
+      body main {
+        margin-top: 8rem;
+        
+    }
+
+    main div.tab {
+        float:none ;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+
+    .tab {
+        display: none;
+    }
+
+    /*style the tab content*/
+    .tabcontent {
+        float: none;
+        padding: 12px 12px;
+        border: 1px solid #ccc;
+        width: 100%;
+        /*border-left:;*/
+        height: auto ;
+        margin: 0 auto 5% auto ;
+}
+
+    /* news */
+    
+.newbox {
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto 3rem auto ;
+}
+
+.othernew {
+    width: 90%;
+    margin: 0 auto 3rem auto ;
+   
+}
+
+main .newbox img { 
+    height: 200px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+ .conteudo h4,p {
+    
+    text-align: justify;
+    color:rgb(36, 33, 33 );
+}
+
+.texto {
+    margin: 0 0 0 0;
+    text-align: justify;
+    font-size: 1.2rem;
+    color:rgb(36, 33, 33 );
+
+}
+
+
+    
+/*slide */
+
+.title { 
+    text-align: center;
+    margin: 90px 0 10px;
+    font-size: 30pt;
+    text-transform: uppercase;
+    display: none;
+}
+
+.slideshow .slide img {
+    height: 250px;
+    width: 300px;
+} 
+
+.slideshow {
+    position: relative;
+    width: 90%;
+    margin: auto;  
+}
+
+.text {
+    background: rgb(36, 33, 33 );
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    align-content: center;
+    color: #f2f2f2;
+    padding: 8px 12px;
+}
+
+
+    /*footer*/
+    footer {
+        background-color: rgb(36, 33, 33 );
+        color: white;
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+
+
+    }

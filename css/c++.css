@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    /*justify-content:space-around ;  eito x*/
+    align-items: center;
+   
+}
+
+header .logo {
+    margin: auto;
+}
+
+header .menuu {
+    /*border: 1px solid red;
+    margin-left: 150px;*/
+   margin: auto;
+   text-transform: uppercase;
+}
+
+
+header nav a {
+    color: black;
+    margin-right: 20px;
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+
+header nav a:hover {
+    background-color: #f2f2f2; 
+    color:rgb(36, 33, 33 );
+     
+}
+
+body {
+    background-color: white;
+}
+
+body main {
+    margin-top: 6rem; 
+    
+}
+
+body main .container {
+    display: none; 
+}
+
+
+main div  div a p  {
+    margin: 5px;
+} 
+
+ .topicTitle {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(36, 33, 33 );
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.topic:hover {
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.contentTitle {
+    font-size: 25px;
+    text-align:start  ;
+    color: #000000;
+}
+
+.subTitle { margin-top: 30px;
+            margin-right: 10px;
+}
+
+
+.content {
+    color:#000000;
+    
+    margin: 5px 5px 5px 30px ;  
+    text-align: justify; 
+}
+
+.content p, ul, h4 {
+    margin: 10px 10px 10px 10px;
+}
+
+
+.topics-container {
+    background-color: rgb(36, 33, 33 );
+    height: 300px;
+    width: 25%;
+    color: #000000;
+    margin: 0 2%;
+    text-align: center;
+}
+
+
+.content-container {
+    background-color: rgb(36, 33, 33 );
+    height: 900px;
+    width: 65%;
+    color: #000000;
+}
+
+.gride {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 300px 40px 40px 40px;
+    margin: 20px 20px 900px 20px;
+    padding: 0px;
+    grid-gap: 10px;
+}
+
+div.gride div.grid1 a {
+    color: #000000;
+}
+
+div.gride div.grid1 a:hover {
+    background: #9e1f1f;
+}
+
+div.gride div.grid2 a {
+    color:#f2f2f2;
+}
+
+div.gride div.grid3 a {
+    color:#f2f2f2;
+}
+
+div.gride div.grid5 a {
+    color:#f2f2f2;
+}
+
+.grid {
+    background-color: white;
+    
+}
+
+/*.grid {
+    overflow: auto;
+    position: fixed;   
+}*/
+
+.grid2 {
+    grid-column: 1;
+    display: flex;
+    align-items: center;  /*eixo y*/
+    justify-content: center; /*eixo x*/
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgb(36, 33, 33 );
+}
+
+.grid3 {
+    grid-row: 2;
+    display: flex;
+    align-items: center;  /*eixo y*/
+    justify-content: center; /*eixo x*/
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgb(36, 33, 33 );
+    position: relative;
+}
+
+
+
+
+.grid4 {
+    grid-row: 5/1;
+    height: 6200px;
+    
+}
+
+.grid5 {
+    display: flex;
+    align-items: center;  /*eixo y*/
+    justify-content: center; /*eixo x*/
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgb(36, 33, 33 );
+}
+
+
+.card {
+    background-color: rgb(36, 33, 33 );
+    color:#f2f2f2;
+    width: 25%;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    margin: 20px auto;
+    justify-content: space-around; /* eito x*/
+    align-items: center;
+    font-size: 30pt;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+    background-color:rgb(7, 68, 49) ;
+    color:white;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 33, 33 );
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 2%;
+}
+
+footer div div a {
+    margin-left: 10px;
+ }
+
+footer div div  {
+   text-align: center;
+   margin-top: 6px;
+   color:#f2f2f2;
+}
+
+.networks div a {
+    color: #f2f2f2;
+}
+
+
+/*slide */
+
+.title { 
+    text-align: center;
+    margin: 90px 0 10px;
+    font-size: 30pt;
+    text-transform: uppercase;
+    display: none;
+}
+.slideshow .slide img {
+    height: 250px;
+    width: 300px;
+} 
+.slideshow {
+    position: relative;
+    width: 40%;
+    margin: 450% auto 0 auto ;  
+}
+
+.text {
+    background: rgb(36, 33, 33 );
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom:0%;
+    align-content: center;
+    color: #f2f2f2;
+    padding: 8px 12px;
+}
+
+/*Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;  
+}
+
+@keyframes fade {
+    from {opacity: .4; }
+    to {opacity: 1} 
+
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 800px ) {  
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        height: 76px;
+        display: block;
+        /*top: 0;
+        display: block;
+        justify-content: space-around;  eito x
+        align-items: center; */
+    }
+
+    header nav {
+        display: visible;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        overflow: auto;
+        white-space: nowrap;  
+    }
+
+     header nav a {
+        display: inline-block;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        margin-left: 5px;
+
+     }
+
+     header a {
+        width: 100%; 
+     }
+
+     header .logo  {
+        /*margin-left: 200px;*/
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        display:flex;
+    }
+
+    header .logo img {
+        /*margin-left: 200px;*/
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .menuu {
+        background-color: white;
+        height: 50px;
+    }
+    .menuu a {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+
+     /*MAIN*/
+     body main {
+        margin-top: 8rem;
+        
+    }
+
+    /*layout*/
+
+    .content {
+        color:#000000;
+        font-size: px;
+        margin: 7px 7px 7px 7px ;  
+        text-align: justify; 
+    }
+    .content p {
+        margin: 10px 0; 
+    }
+
+    .contentTitle {
+        margin-top: 15px;
+        font-size: medium;
+    }
+
+    .topics-container {
+        background-color: rgb(36, 33, 33 );
+        height: 300px;
+        width: 25%;
+        color: #000000;
+        margin: 0 2%;
+        text-align: justify;
+    }
+    
+    
+    .content-container {
+       background-color: rgb(36, 33, 33 );
+        height: 900px;
+        width: 65%;
+        color: #000000;
+        
+    }
+   
+    .gride {
+        background-color: white;
+        margin: 0;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .grid {
+        background-color: white;
+        margin: 0;
+        
+    }
+
+    .grid1 {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .grid2 {
+        order: 3;
+        align-items: center;  /*eixo y*/
+        justify-content: center; /*eixo x*/
+        width: 60%;
+        padding: 15px;
+        margin: 0 auto;
+        background-color: rgb(36, 33, 33 );
+    }
+    
+    .grid3 {
+        order: 4;
+        align-items: center;  /*eixo y*/
+        justify-content: center; /*eixo x*/
+        width: 60%;
+        padding: 15px;
+        margin: 0 auto;
+        background-color: rgb(36, 33, 33 );
+        position: relative;
+    }
+    
+    .grid4 {
+        order: 2;
+        height: auto;
+        
+    }
+    
+    .grid5 {
+        order: 5;
+        align-items: center;  /*eixo y*/
+        justify-content: center; /*eixo x*/
+        width: 60%;
+        padding: 15px;
+        margin: 0 auto;
+        background-color: rgb(36, 33, 33 );
+    }
+    
+
+
+
+
+    /*slide */
+
+.title { 
+    text-align: center;
+    margin: 90px 0 10px;
+    font-size: 30pt;
+    text-transform: uppercase;
+    display: none;
+}
+.slideshow .slide img {
+    height: 250px;
+    width: 300px;
+} 
+.slideshow {
+    position: relative;
+    width: 90%;
+    margin: 5rem auto 0 auto ;  
+}
+
+.text {
+    background: rgb(36, 33, 33 );
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom:0%;
+    align-content: center;
+    color: #f2f2f2;
+    padding: 8px 12px;
+}
+
+
+    /*footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 33, 33 );
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+footer div div  {
+   text-align: center;
+   margin-top: 5px;
+   color:#f2f2f2;
+}
+
+.networks div a {
+    color: #f2f2f2;
+}
+
+    }
